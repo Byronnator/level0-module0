@@ -40,7 +40,9 @@ if __name__ == '__main__':
         if i == 200:
             bob.width(3)
         bob.pencolor(get_next_color(i))
-        bob.foward(i)
+        bob.forward(i)
+        bob.right(space+1)
+    bob.hideturtle()
         # If the loop variable (i) is equal to 200, set the turtle width to 3
         
         # Use the get_next_color function to set the turtle pencolor,

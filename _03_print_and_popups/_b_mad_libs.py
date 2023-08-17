@@ -3,22 +3,22 @@ from tkinter import messagebox, simpledialog, Tk
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
 if __name__ == '__main__':
     # Make a new window variable, window = Tk()
-
+    window = Tk()
     # Hide the window using the window's .withdraw() method
-
+    window.withdraw()
     # Put this sentence in a pop-up message box:
     # "If you find yourself having to cross a piranha-infested river, here's how to do it..."
-
+    messagebox.showinfo(title= None, message = "If you find yourself having to cross a piranha-infested river, here's how to do it...")
     # Get the player to enter an adjective
-
+    adjective= simpledialog.askstring(title= None, prompt = 'enter a adjective')
     # Get the player to enter a type of liquid
-
+    simpledialog.askstring(title= None, prompt = 'enter a liquid')
     # Get the player to enter a body part
-
+    simpledialog.askstring(title=None, prompt='enter a body part')
     # Get the player to enter a verb
-
+    simpledialog.askstring(title=None, prompt='enter a verb')
     # Get the player to enter a place
-
+    simpledialog.askstring(title=None, prompt='enter a place')
     # The story below has has been written as a group of Strings joined
     # together by + signs. The story contains place holders, indicated
     # by [** **] which you need to replace with the values entered by the
@@ -42,5 +42,4 @@ if __name__ == '__main__':
     # and ask the player different questions.
 
     # Run the window's .mainloop() method
-
     pass
