@@ -22,7 +22,7 @@ if __name__ == '__main__':
     # The story below has has been written as a group of Strings joined
     # together by + signs. The story contains place holders, indicated
     # by [** **] which you need to replace with the values entered by the
-    # player.
+    # player.g
     # Hint: You will need to add more + signs to join the variables to the
     #       other parts of the story.
 
