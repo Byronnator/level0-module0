@@ -12,14 +12,27 @@ if __name__=='__main__':
     spanish = simpledialog.askstring(title= None, prompt = 'What country has the most spanish speakers')
     if spanish == 'Mexico':
         score = score + 2
+        messagebox.showinfo(title=None, message='Correct')
     else:
         score = score - 1
-    mostspeakers = simpledialog.askstring(title= None, prompt = 'What language had the most amount of speakers')
-    if mostspeakers == 'english':
+        messagebox.showinfo(title=None, message='False')
+    mostspeakers = simpledialog.askstring(title= None, prompt = 'What language has the most amount of speakers')
+    if mostspeakers == 'English':
         score += 2
+        messagebox.showinfo(title=None, message='Correct')
     else:
         score -= 1
-    #      // 2.  Ask the user a question 
+        messagebox.showinfo(title=None, message='False')
+
+    europe = simpledialog.askstring(title= None, prompt = 'What language has the most amount of native speakers in europe')
+    if europe == 'Russian':
+        score += 2
+        messagebox.showinfo(title= None, message = 'Correct')
+    else:
+        score -=1
+        messagebox.showinfo(title=None, message='False')
+    messagebox.showinfo(title= None, message= 'Your final score is '+str(score))
+    #      // 2.  Ask the user a question
     
     #      // 3.  Use an if statement to check if their answer is correct
 
